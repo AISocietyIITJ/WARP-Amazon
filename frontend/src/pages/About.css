@@ -1,0 +1,36 @@
+.about-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a202c;
+    padding: 40px;
+    text-align: center; /* Added for consistency */
+}
+
+.about-box {
+    background: #2d3748;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto; /* Ensures centering */
+}
+
+.about-box h1, 
+.about-box h2,
+.section h3 {
+    text-align: center; /* Consistent text alignment */
+    margin-left: auto;
+    margin-right: auto;
+    color: whitesmoke;
+}
+
+.section {
+    margin-top: 20px;
+    text-align: left; /* Content left-aligned within centered container */
+    max-width: 90%; /* Prevents text from stretching full width */
+    margin-left: auto;
+    margin-right: auto;
+}
