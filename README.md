@@ -1,5 +1,4 @@
 # WARP-Amazon
-Warp Amazon
 
 # 🎓 Course Recommender System – Web App
 
