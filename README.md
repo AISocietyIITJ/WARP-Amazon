@@ -43,19 +43,29 @@ This is a smart and user-friendly web application that recommends courses based 
 
 ## 🚀 How to Run the Project
 
+### 1. Clone the repository
+
 ```bash
 git clone https://github.com/AISocietyIITJ/WARP-Amazon.git
 cd WARP-Amazon
+```
 
+### 2. Run the Backend (FastAPI)
+
+```bash
 cd backend
 python -m venv venv
 source venv/bin/activate  # For Windows: venv\Scripts\activate
 pip install -r requirements.txt
 uvicorn main:app --reload
+```
 
+### 2. Run the Frontend (React JS)
+```bash
 cd frontend
 npm install
 npm start
+```
 
 
 
