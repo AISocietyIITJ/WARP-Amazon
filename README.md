@@ -50,7 +50,11 @@ git clone https://github.com/AISocietyIITJ/WARP-Amazon.git
 cd WARP-Amazon
 ```
 
-### 2. Run the Backend (FastAPI)
+### 2. Download the model
+- Qwen 2.5-14B Instruct: https://huggingface.co/mohitdeharkar/warp_Qwen2.5-14B-Instruct/tree/main
+- BERT fine-tuned model: https://huggingface.co/mohitdeharkar/warp_fine_tuned_bge_m3/tree/main
+
+### 3. Run the Backend (FastAPI)
 
 ```bash
 cd backend
@@ -60,12 +64,14 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
-### 2. Run the Frontend (React JS)
+### 4. Run the Frontend (React JS)
 ```bash
 cd frontend
 npm install
 npm start
 ```
+
+
 
 
 
