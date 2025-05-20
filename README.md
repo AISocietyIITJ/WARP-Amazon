@@ -41,7 +41,7 @@ This is a smart and user-friendly web application that recommends courses based 
 
 ---
 
-![Project Pipeline Screenshot](photo_2025-05-20_12-17-08.jpg)
+![Project Pipeline Screenshot](images/pipeline.jpg)
 
 ---
 
