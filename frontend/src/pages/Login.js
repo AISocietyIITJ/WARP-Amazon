@@ -6,7 +6,7 @@ function LoginPage() {
   const navigate = useNavigate(); 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const [name, setName] = useState("");
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -26,6 +26,12 @@ function LoginPage() {
         const errorData = await response.json();
         throw new Error(errorData.detail || "Login failed");
       }
+      const userData = {
+        name: name,
+        email: email
+      };
+    
+      sessionStorage.setItem('userData', JSON.stringify(userData));
   
       alert("Login successful!");
       navigate("/");
@@ -41,6 +47,14 @@ function LoginPage() {
       <div className="login-box">
         <h2 className="login-title">Login</h2>
         <form onSubmit={handleLogin} className="login-form">
+          <input
+            type="text"
+            placeholder="User Name"
+            className="login-input"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
           <input
             type="email"
             placeholder="Email"
